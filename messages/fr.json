@@ -1,0 +1,270 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+
+	"todo": {
+		"page_title": "Mes tâches",
+		"new_todo": "Nouvelle tâche",
+		"no_todos": "Aucune tâche pour le moment.",
+		"add_first_todo": "Ajouter votre première tâche",
+		"event_created": "La tâche a été créée",
+		"event_updated": "La tâche a été mise à jour",
+		"event_deleted": "La tâche a été supprimée"
+	},
+
+	"todo_form": {
+		"title": "Titre*",
+		"title_placeholder": "Que devez-vous faire?",
+		"description": "Description",
+		"description_placeholder": "Détails supplémentaires...",
+		"cancel": "Annuler",
+		"create": "Créer la tâche"
+	},
+
+	"email_verification": {
+		"success_title": "Email vérifié avec succès !",
+		"success_message": "Votre adresse email a été vérifiée avec succès. Vous pouvez maintenant accéder à toutes les fonctionnalités de l'application.",
+		"access_account": "Accéder à mon compte",
+		"required_title": "Vérification d'email requise",
+		"required_message": "Votre adresse email n'a pas encore été vérifiée. Veuillez vérifier votre boîte de réception pour l'email de vérification et cliquer sur le lien pour vérifier votre compte.",
+		"success_sent": "Email de vérification envoyé. Veuillez vérifier votre boîte de réception.",
+		"error_sending": "Une erreur s'est produite lors de l'envoi de l'email de vérification",
+		"didnt_receive": "Vous n'avez pas reçu l'email de vérification ?",
+		"wait_button": "Patienter",
+		"resend_button": "Renvoyer l'email de vérification"
+	},
+
+	"resend_verification": {
+		"title": "Renvoyer l'email de vérification",
+		"error_message": "Une erreur s'est produite lors de l'envoi de l'email de vérification",
+		"email_label": "Adresse email",
+		"resend_button": "Renvoyer l'email de vérification",
+		"back_to_login": "Retour à la connexion"
+	},
+
+	"login": {
+		"title": "Se connecter",
+		"error_message": "Une erreur s'est produite lors de la connexion",
+		"verification_email": "Vous n'avez pas reçu l'email de vérification ?"
+	},
+
+	"register": {
+		"title": "Créer un compte"
+	},
+
+	"profile": {
+		"email": "Email:",
+		"name": "Nom:",
+		"id": "ID:"
+	},
+
+	"account": {
+		"hello_name": "Bonjour, je suis {name}",
+		"hello_email": "... et mon adresse email est : {email}"
+	},
+
+	"validation_error": [
+		{
+			"declarations": ["input field", "input code"],
+			"selectors": ["field", "code"],
+			"match": {
+				"field=email, code=required": "L'adresse e-mail est obligatoire.",
+				"field=email, code=invalid": "Format d'adresse e-mail invalide.",
+				"field=password, code=required": "Le mot de passe est obligatoire.",
+				"field=confirmPassword, code=required": "Le mot de passe est obligatoire.",
+				"field=password, code=too_short": "Le mot de passe doit contenir au moins 8 caractères.",
+				"field=password, code=too_weak": "Le mot de passe est trop faible. Utilisez des caractères spéciaux, des chiffres et des lettres.",
+				"field=password, code=no_uppercase": "Le mot de passe doit contenir au moins une lettre majuscule.",
+				"field=password, code=no_lowercase": "Le mot de passe doit contenir au moins une lettre minuscule.",
+				"field=password, code=no_digit": "Le mot de passe doit contenir au moins un chiffre.",
+				"field=password, code=no_special": "Le mot de passe doit contenir au moins un caractère spécial.",
+				"field=password, code=complexity": "Le mot de passe doit contenir au moins une lettre majuscule, une lettre minuscule, un chiffre et un caractère spécial.",
+				"field=name, code=required": "Le nom est obligatoire.",
+				"field=confirmPassword, code=not_matching": "Les mots de passe ne correspondent pas.",
+				"field=*, code=*": "Champ invalide"
+			}
+		}
+	],
+
+	"form_labels": [
+		{
+			"declarations": ["input field"],
+			"selectors": ["field"],
+			"match": {
+				"field=email": "E-mail",
+				"field=password": "Mot de passe",
+				"field=name": "Nom",
+				"field=confirmPassword": "Confirmer le mot de passe"
+			}
+		}
+	],
+
+	"form_placeholders": [
+		{
+			"declarations": ["input field"],
+			"selectors": ["field"],
+			"match": {
+				"field=email": "Entrez votre adresse e-mail",
+				"field=password": "Entrez votre mot de passe",
+				"field=name": "Entrez votre nom",
+				"field=confirmPassword": "Confirmez votre mot de passe"
+			}
+		}
+	],
+
+	"buttons": {
+		"submit": "Soumettre",
+		"cancel": "Annuler",
+		"logout": "Déconnexion",
+		"register": "S'inscrire",
+		"reset_password": "Réinitialiser le mot de passe",
+		"forgot_password": "Mot de passe oublié ?",
+		"login": "Connexion",
+		"account": "Mon compte",
+		"need_account": "Besoin d'un compte ? S'inscrire",
+		"already_have_account": "Vous avez déjà un compte ? Se connecter"
+	},
+
+	"notifications": {
+		"verification_email_sent": "Un e-mail de vérification a été envoyé. Veuillez vérifier votre boîte de réception."
+	},
+
+	"form_errors_count": [
+		{
+			"declarations": ["input count", "local countPlural = count: plural"],
+			"selectors": ["countPlural"],
+			"match": {
+				"countPlural=one": "Il y a une erreur dans le formulaire",
+				"countPlural=other": "Il y a {count} erreurs dans le formulaire"
+			}
+		}
+	],
+
+	"error_messages": [
+		{
+			"declarations": ["input type"],
+			"selectors": ["type"],
+			"match": {
+				"type=general_unauthorized_scope": "Vous n'avez pas la permission d'effectuer cette action.",
+				"type=user_unauthorized": "Vous devez être authentifié pour effectuer cette action.",
+				"type=user_invalid_token": "Le jeton d'authentification fourni est invalide.",
+				"type=user_invalid_credentials": "Les identifiants fournis sont invalides.",
+				"type=user_account_blocked": "Votre compte a été bloqué. Veuillez contacter le support.",
+				"type=user_email_already_exists": "Un utilisateur avec cette adresse e-mail existe déjà.",
+				"type=user_email_not_verified": "Votre adresse e-mail n'a pas été vérifiée.",
+				"type=user_password_invalid": "Le mot de passe fourni est invalide.",
+				"type=user_session_expired": "Votre session a expiré. Veuillez vous reconnecter.",
+				"type=user_session_invalid": "La session n'est pas valide ou a expiré.",
+				"type=user_not_found": "Utilisateur introuvable.",
+				"type=user_already_logged_in": "Vous êtes déjà connecté.",
+				"type=user_already_logged_out": "Vous êtes déjà déconnecté.",
+				"type=user_invalid_verification": "La vérification a échoué ou le lien est invalide.",
+				"type=user_invalid_reset": "La demande de réinitialisation du mot de passe est invalide ou expirée.",
+				"type=user_invalid_magic_url": "Le lien magique est invalide ou expiré.",
+				"type=user_invalid_phone": "Le numéro de téléphone fourni est invalide.",
+				"type=user_phone_already_exists": "Un utilisateur avec ce numéro de téléphone existe déjà.",
+				"type=user_phone_not_verified": "Votre numéro de téléphone n'a pas été vérifié.",
+				"type=user_invalid_code": "Le code fourni est invalide ou expiré.",
+				"type=user_invalid_oauth_provider": "Le fournisseur OAuth sélectionné n'est pas valide.",
+				"type=user_oauth_access_denied": "L'accès OAuth a été refusé.",
+				"type=user_oauth_failed": "L'authentification OAuth a échoué.",
+				"type=user_oauth_invalid_token": "Le jeton OAuth est invalide ou expiré.",
+				"type=user_oauth_invalid_provider": "Le fournisseur OAuth est invalide.",
+				"type=user_oauth_invalid_user": "L'utilisateur OAuth est invalide.",
+				"type=user_oauth_linked": "Ce compte est déjà lié à un autre utilisateur.",
+				"type=user_oauth_unlinked": "Ce compte n'est pas lié à ce fournisseur OAuth.",
+				"type=user_oauth_not_linked": "Aucun compte lié à ce fournisseur OAuth.",
+				"type=user_oauth_email_exists": "Un utilisateur avec cette adresse e-mail existe déjà via OAuth.",
+				"type=user_oauth_phone_exists": "Un utilisateur avec ce numéro de téléphone existe déjà via OAuth.",
+				"type=user_oauth_account_exists": "Un compte OAuth existe déjà avec ces informations.",
+				"type=user_oauth_account_not_found": "Aucun compte OAuth trouvé avec ces informations.",
+				"type=user_oauth_invalid_redirect": "L'URL de redirection OAuth est invalide.",
+				"type=user_oauth_invalid_scope": "L'étendue OAuth demandée est invalide.",
+				"type=user_oauth_invalid_state": "L'état OAuth est invalide ou expiré.",
+				"type=user_oauth_invalid_response_type": "Le type de réponse OAuth est invalide.",
+				"type=user_oauth_invalid_grant_type": "Le type de jeton OAuth est invalide.",
+				"type=user_oauth_invalid_client": "Le client OAuth est invalide.",
+				"type=user_oauth_invalid_code": "Le code OAuth est invalide ou expiré.",
+				"type=user_oauth_invalid_token_type": "Le type de jeton OAuth est invalide.",
+				"type=user_oauth_invalid_request": "La requête OAuth est invalide.",
+				"type=user_oauth_invalid_access_token": "Le jeton d'accès OAuth est invalide ou expiré.",
+				"type=user_oauth_invalid_refresh_token": "Le jeton de rafraîchissement OAuth est invalide ou expiré.",
+				"type=user_oauth_invalid_id_token": "Le jeton d'identité OAuth est invalide ou expiré.",
+				"type=user_oauth_invalid_nonce": "Le nonce OAuth est invalide ou expiré.",
+				"type=user_oauth_invalid_pkce": "Le code PKCE OAuth est invalide.",
+				"type=user_oauth_invalid_code_verifier": "Le vérificateur de code OAuth est invalide.",
+				"type=user_oauth_invalid_code_challenge": "Le challenge de code OAuth est invalide.",
+				"type=user_oauth_invalid_code_challenge_method": "La méthode de challenge de code OAuth est invalide.",
+				"type=user_oauth_invalid_device_code": "Le code d'appareil OAuth est invalide ou expiré.",
+				"type=user_oauth_invalid_user_code": "Le code utilisateur OAuth est invalide ou expiré.",
+				"type=user_oauth_invalid_device_grant": "La subvention d'appareil OAuth est invalide.",
+				"type=user_oauth_invalid_device_token": "Le jeton d'appareil OAuth est invalide ou expiré.",
+				"type=user_oauth_invalid_device": "L'appareil OAuth est invalide.",
+				"type=user_oauth_invalid_device_id": "L'identifiant d'appareil OAuth est invalide.",
+				"type=user_oauth_invalid_device_secret": "Le secret d'appareil OAuth est invalide.",
+				"type=user_oauth_invalid_device_scope": "L'étendue d'appareil OAuth est invalide.",
+				"type=user_oauth_invalid_device_redirect": "L'URL de redirection d'appareil OAuth est invalide.",
+				"type=user_oauth_invalid_device_response_type": "Le type de réponse d'appareil OAuth est invalide.",
+				"type=user_oauth_invalid_device_grant_type": "Le type de jeton d'appareil OAuth est invalide.",
+				"type=user_oauth_invalid_device_client": "Le client d'appareil OAuth est invalide.",
+				"type=user_oauth_invalid_device_code_verifier": "Le vérificateur de code d'appareil OAuth est invalide.",
+				"type=user_oauth_invalid_device_code_challenge": "Le challenge de code d'appareil OAuth est invalide.",
+				"type=user_oauth_invalid_device_code_challenge_method": "La méthode de challenge de code d'appareil OAuth est invalide.",
+				"type=database_not_found": "La base de données demandée est introuvable.",
+				"type=database_already_exists": "Une base de données avec ce nom existe déjà.",
+				"type=database_invalid_id": "L'identifiant de la base de données est invalide.",
+				"type=database_invalid_permissions": "Les permissions de la base de données sont invalides.",
+				"type=database_invalid_document": "Le document fourni est invalide.",
+				"type=database_document_not_found": "Le document demandé est introuvable dans la base de données.",
+				"type=database_collection_not_found": "La collection demandée est introuvable dans la base de données.",
+				"type=database_collection_already_exists": "Une collection avec ce nom existe déjà dans la base de données.",
+				"type=database_invalid_collection": "La collection fournie est invalide.",
+				"type=database_invalid_index": "L'index fourni est invalide.",
+				"type=database_index_not_found": "L'index demandé est introuvable dans la base de données.",
+				"type=database_invalid_query": "La requête de base de données est invalide.",
+				"type=database_invalid_attribute": "L'attribut fourni est invalide.",
+				"type=database_attribute_not_found": "L'attribut demandé est introuvable dans la base de données.",
+				"type=database_invalid_relationship": "La relation fournie est invalide.",
+				"type=database_relationship_not_found": "La relation demandée est introuvable dans la base de données.",
+				"type=database_invalid_role": "Le rôle fourni est invalide.",
+				"type=database_invalid_permission": "La permission fournie est invalide.",
+				"type=database_invalid_rule": "La règle fournie est invalide.",
+				"type=database_rule_not_found": "La règle demandée est introuvable dans la base de données.",
+				"type=database_invalid_schema": "Le schéma de la base de données est invalide.",
+				"type=database_schema_not_found": "Le schéma demandé est introuvable dans la base de données.",
+				"type=database_invalid_validator": "Le validateur fourni est invalide.",
+				"type=database_validator_not_found": "Le validateur demandé est introuvable dans la base de données.",
+				"type=database_invalid_event": "L'événement fourni est invalide.",
+				"type=database_event_not_found": "L'événement demandé est introuvable dans la base de données.",
+				"type=database_invalid_trigger": "Le déclencheur fourni est invalide.",
+				"type=database_trigger_not_found": "Le déclencheur demandé est introuvable dans la base de données.",
+				"type=storage_bucket_not_found": "Le bucket de stockage demandé est introuvable.",
+				"type=storage_bucket_already_exists": "Un bucket de stockage avec ce nom existe déjà.",
+				"type=storage_invalid_bucket": "Le bucket de stockage fourni est invalide.",
+				"type=storage_invalid_file": "Le fichier fourni est invalide.",
+				"type=storage_file_not_found": "Le fichier demandé est introuvable dans le stockage.",
+				"type=storage_invalid_permissions": "Les permissions de stockage sont invalides.",
+				"type=storage_invalid_mime_type": "Le type MIME du fichier est invalide.",
+				"type=storage_invalid_size": "La taille du fichier est invalide.",
+				"type=storage_invalid_name": "Le nom du fichier est invalide.",
+				"type=storage_invalid_path": "Le chemin du fichier est invalide.",
+				"type=storage_invalid_signature": "La signature du fichier est invalide.",
+				"type=storage_invalid_upload": "L'envoi du fichier a échoué.",
+				"type=storage_invalid_download": "Le téléchargement du fichier a échoué.",
+				"type=storage_invalid_delete": "La suppression du fichier a échoué.",
+				"type=storage_invalid_update": "La mise à jour du fichier a échoué.",
+				"type=storage_invalid_move": "Le déplacement du fichier a échoué.",
+				"type=storage_invalid_copy": "La copie du fichier a échoué.",
+				"type=storage_invalid_permission": "La permission de stockage est invalide.",
+				"type=storage_invalid_rule": "La règle de stockage est invalide.",
+				"type=storage_rule_not_found": "La règle de stockage demandée est introuvable.",
+				"type=storage_invalid_validator": "Le validateur de stockage est invalide.",
+				"type=storage_validator_not_found": "Le validateur de stockage demandé est introuvable.",
+				"type=storage_invalid_event": "L'événement de stockage est invalide.",
+				"type=storage_event_not_found": "L'événement de stockage demandé est introuvable.",
+				"type=storage_invalid_trigger": "Le déclencheur de stockage est invalide.",
+				"type=storage_trigger_not_found": "Le déclencheur de stockage demandé est introuvable.",
+				"type=*": "Une erreur inconnue est survenue."
+			}
+		}
+	]
+}
