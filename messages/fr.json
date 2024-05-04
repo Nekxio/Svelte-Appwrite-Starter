@@ -1,0 +1,132 @@
+{
+	"$schema": "https://inlang.com/schema/inlang-message-format",
+
+	"todo": {
+		"page_title": "Mes tâches",
+		"new_todo": "Nouvelle tâche",
+		"no_todos": "Aucune tâche pour le moment.",
+		"add_first_todo": "Ajouter votre première tâche",
+		"event_created": "La tâche a été créée",
+		"event_updated": "La tâche a été mise à jour",
+		"event_deleted": "La tâche a été supprimée"
+	},
+
+	"todo_form": {
+		"title": "Titre*",
+		"title_placeholder": "Que devez-vous faire?",
+		"description": "Description",
+		"description_placeholder": "Détails supplémentaires...",
+		"cancel": "Annuler",
+		"create": "Créer la tâche"
+	},
+
+	"email_verification": {
+		"success_title": "Email vérifié avec succès !",
+		"success_message": "Votre adresse email a été vérifiée avec succès. Vous pouvez maintenant accéder à toutes les fonctionnalités de l'application.",
+		"access_account": "Accéder à mon compte",
+		"required_title": "Vérification d'email requise",
+		"required_message": "Votre adresse email n'a pas encore été vérifiée. Veuillez vérifier votre boîte de réception pour l'email de vérification et cliquer sur le lien pour vérifier votre compte.",
+		"success_sent": "Email de vérification envoyé. Veuillez vérifier votre boîte de réception.",
+		"error_sending": "Une erreur s'est produite lors de l'envoi de l'email de vérification",
+		"didnt_receive": "Vous n'avez pas reçu l'email de vérification ?",
+		"wait_button": "Patienter ({countdown})",
+		"resend_button": "Renvoyer l'email de vérification"
+	},
+
+	"resend_verification": {
+		"title": "Renvoyer l'email de vérification",
+		"error_message": "Une erreur s'est produite lors de l'envoi de l'email de vérification",
+		"email_label": "Adresse email",
+		"resend_button": "Renvoyer l'email de vérification",
+		"back_to_login": "Retour à la connexion"
+	},
+	"login": {
+		"error_message": "Une erreur s'est produite lors de la connexion",
+		"email_placeholder": "Email",
+		"password_placeholder": "Mot de passe",
+		"login_button": "Se connecter",
+		"need_account": "Besoin d'un compte ? S'inscrire",
+		"verification_email": "Vous n'avez pas reçu l'email de vérification ?"
+	},
+
+	"profile": {
+		"email": "Email:",
+		"name": "Nom:",
+		"id": "ID:"
+	},
+
+	"error_message": [
+		{
+			"declarations": ["input errorType", "input errorCode"],
+			"selectors": ["errorType", "errorCode"],
+			"match": {
+				"errorType=auth, errorCode=401": "Non autorisé. Veuillez vous connecter à nouveau.",
+				"errorType=auth, errorCode=404": "Aucune session trouvée. Veuillez vous connecter.",
+				"errorType=resource, errorCode=404": "La ressource demandée est introuvable.",
+				"errorType=resource, errorCode=409": "La ressource existe déjà.",
+				"errorType=user, errorCode=blocked": "Votre compte a été temporairement bloqué pour des raisons de sécurité.",
+				"errorType=user, errorCode=exists": "Un utilisateur avec cette adresse e-mail existe déjà.",
+				"errorType=validation, errorCode=form_error": "Veuillez corriger les erreurs dans le formulaire.",
+				"errorType=validation, errorCode=passwords_not_matching": "Les mots de passe ne correspondent pas.",
+				"errorType=server, errorCode=429": "Trop de tentatives. Veuillez réessayer plus tard.",
+				"errorType=server, errorCode=*": "Une erreur inattendue s'est produite. Code: {errorCode}",
+				"errorType=*, errorCode=*": "Une erreur est survenue."
+			}
+		}
+	],
+
+	"validation_error": [
+		{
+			"declarations": ["input field", "input code"],
+			"selectors": ["field", "code"],
+			"match": {
+				"field=email, code=required": "L'adresse e-mail est obligatoire.",
+				"field=email, code=invalid": "Format d'adresse e-mail invalide.",
+				"field=password, code=required": "Le mot de passe est obligatoire.",
+				"field=confirmPassword, code=required": "Le mot de passe est obligatoire.",
+				"field=password, code=too_short": "Le mot de passe doit contenir au moins 8 caractères.",
+				"field=password, code=too_weak": "Le mot de passe est trop faible. Utilisez des caractères spéciaux, des chiffres et des lettres.",
+				"field=password, code=no_uppercase": "Le mot de passe doit contenir au moins une lettre majuscule.",
+				"field=password, code=no_lowercase": "Le mot de passe doit contenir au moins une lettre minuscule.",
+				"field=password, code=no_digit": "Le mot de passe doit contenir au moins un chiffre.",
+				"field=password, code=no_special": "Le mot de passe doit contenir au moins un caractère spécial.",
+				"field=password, code=complexity": "Le mot de passe doit contenir au moins une lettre majuscule, une lettre minuscule, un chiffre et un caractère spécial.",
+				"field=name, code=required": "Le nom est obligatoire.",
+				"field=confirmPassword, code=not_matching": "Les mots de passe ne correspondent pas.",
+				"field=*, code=*": "Champ invalide"
+			}
+		}
+	],
+
+	"form_labels": {
+		"email": "E-mail",
+		"password": "Mot de passe",
+		"name": "Nom",
+		"password_confirmation": "Confirmer le mot de passe"
+	},
+
+	"buttons": {
+		"submit": "Soumettre",
+		"cancel": "Annuler",
+		"logout": "Déconnexion",
+		"register": "S'inscrire",
+		"reset_password": "Réinitialiser le mot de passe",
+		"forgot_password": "Mot de passe oublié ?",
+		"login": "Connexion"
+	},
+
+	"notifications": {
+		"verification_email_sent": "Un e-mail de vérification a été envoyé. Veuillez vérifier votre boîte de réception."
+	},
+
+	"form_errors_count": [
+		{
+			"declarations": ["input count", "local countPlural = count: plural"],
+			"selectors": ["countPlural"],
+			"match": {
+				"countPlural=one": "Il y a une erreur dans le formulaire",
+				"countPlural=other": "Il y a {count} erreurs dans le formulaire"
+			}
+		}
+	]
+}
