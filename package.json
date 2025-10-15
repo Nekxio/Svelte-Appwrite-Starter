@@ -52,7 +52,7 @@
 		"lodash": "^4.17.21",
 		"node-appwrite": "^15.0.1",
 		"svelte-sonner": "^0.3.28",
-		"sveltekit-superforms": "^2.26.1",
+		"sveltekit-superforms": "^2.27.4",
 		"zod": "^3.25.56"
 	},
 	"pnpm": {
